@@ -697,6 +697,7 @@ void drawData70 (const char* s, CGFloat cap, NSColor* colour, CGFloat cx, CGFloa
     [nameField setTarget: self];
     [nameField setAction: @selector (nameEntered:)];
     [nameField setDelegate: self];
+    [nameField setAlphaValue: 0.0];        // takes the typing; the panel draws it in DATA 70
     [self addSubview: nameField];
     status[0] = 0;
     readoutParam = -1;
